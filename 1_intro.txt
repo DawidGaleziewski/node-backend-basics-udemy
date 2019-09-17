@@ -1,0 +1,69 @@
+    1. Dynamic vs static pages
+
+    2. HTTP in depth 
+-request response cycle
+-GET PUT PATCH and DELETE are called http verbs
+
+    3. Postman response
+-Single request has a:
+a) body of the request- payload (html css and js).
+b) headers - matadata about the response
+
+GET - every request for information. When we enter a site url we will most probably perform a GET request.
+    !Search will be a GET request, that will send some infomration. This is called a query string 
+    
+    i.e /search?q=corgi //Those are request params
+    i.e /search?q=corgi&name=maja 
+    https://www.reddit.com/search?q=cats
+
+POST - when we want to update something on site, i.e. add a post
+
+
+================================================
+Overview of app.js for node:
+-app.js contains:
+    imports (i.e mongoose)
+-database handling
+-routes
+    Routes are definded action for invidual request i.e. GET
+
+
+MongoDb setup
+================================================
+1. Kill mongo processes to make sure nothing is running
+~ killall mongod 
+
+2. Check if mongo was installed before
+mongo --version
+ 2a. Uninstall mongo if you have old version
+ sudo apt-get purge -y mongodb-org *
+https://stackoverflow.com/questions/51417708/unable-to-install-mongodb-properly-on-ubuntu-18-04-lts
+
+3. Install mongo
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 2930ADAE8CAF5059EE73BB4B58712A2291FA4AD5
+echo "deb [ arch=amd64 ] https://repo.mongodb.org/apt/ubuntu trusty/mongodb-org/3.6 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.6.list
+sudo apt-get update
+sudo apt-get install -y mongodb-org
+
+4. Remove mongo deamon
+rm -rf mongod
+//Location for mongo db in ubuntu is /etc/mongod.conf
+
+5.
+
+#All comands:
+
+killall mongod
+sudo apt-get purge -y mongodb-org*
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 2930ADAE8CAF5059EE73BB4B58712A2291FA4AD5
+echo "deb [ arch=amd64 ] https://repo.mongodb.org/apt/ubuntu trusty/mongodb-org/3.6 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.6.list
+sudo apt-get update
+sudo apt-get install -y mongodb-org
+
+rm -rf mongod
+echo "mongod --dbpath=data --nojournal" > mongod
+chmod a+x mongod
+
+
+###backend code repo:
+https://github.com/nax3t/webdevbootcamp 

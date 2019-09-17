@@ -1,0 +1,4 @@
+#NPM definition
+    -package manager
+    -used to get libraries, called as packages
+    
