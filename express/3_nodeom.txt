@@ -1,0 +1,3 @@
+#nodeamon willr estart server everytime we apply change to apply
+npm i -g nodemon
+nodemon (it auto runs app.js taking it from package.json)

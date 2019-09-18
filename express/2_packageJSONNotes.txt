@@ -1,0 +1,8 @@
+Package.json file in each module contains:
+-metadata on packages
+package.json is like a recepie that allows to replicate all dependencies
+
+--save saves into package.json
+
+1. npm init
+2. npm install <package> --save/save-dev
