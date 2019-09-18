@@ -1,0 +1,11 @@
+1. What is framework? 
+Library is code somebody else wrote and we cna use it in our project
+
+frameworks are the same. But they have diffrent use.
+
+You call Library - You can use parts we want
+Framework calls you - we lose control
+Express is a framework
+
+2 Express - web framework
+-unopinionated
