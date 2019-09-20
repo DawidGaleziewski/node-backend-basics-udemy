@@ -1,0 +1,12 @@
+<!-- Using js inside ejs -->
+    <!-- We use <%= %> -->
+<p>Basic calculation: <%= 5+ 5%></p>
+
+<!-- Using variables passed to template -->
+<!-- We passed {thingVar: thing} we use thingVar to access the passed value in object -->
+<h1>You fell in love with: <%= thingVar %> </h1>
+
+<!-- As this is regular js we can use js methods -->
+<!-- Whatever is in the brackets will be threated as js first and then printed -->
+<h1>You fell in love with: <%= thingVar.toUpperCase() %> </h1>
+<p>P.S this is love.ejs file</p>
