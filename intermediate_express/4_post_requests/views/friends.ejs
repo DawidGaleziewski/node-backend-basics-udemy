@@ -1,0 +1,13 @@
+<h1>List of friends</h1>
+<ul>
+    <% friends.forEach(friend=> { %>
+        <li>I have a friend <%= friend %></li>
+    <% }) %> 
+</ul>
+
+<!-- action holds the url for the post -->
+<form action="/addfriend" method="POST">
+    <!-- we need name here that will allo us to find this data in the body-->
+    <input name="friendName" type="text" placeholder="name">
+    <input type="submit" vale="add friend">
+</form>
