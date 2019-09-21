@@ -20,7 +20,7 @@ console.clear()
     
     requestPromise(apiUrl)
         .then(response => {
-            console.log(response)
+            console.log(JSON.parse(response))
         })
         .catch(error => {
             console.log(`Error has occured: ${error}`)
